@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/extern/eltopo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/extern/eltopo/extern/core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/extern/eltopo/extern/core/extern/imgui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/extern/eltopo/extern/pybind11" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/extern/eltopo/extern/pybind11/tools/clang" vcs="Git" />
+  </component>
+</project>
