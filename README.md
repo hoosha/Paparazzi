@@ -3,7 +3,7 @@ Paparazzi: Surface Editing by way of Multi-view Image Processing
 
 ### Modular version
 We have two versions available: one with a "Matlab-esque" main loop in the ```master``` branch and a a more [modular version](https://github.com/HTDerekLiu/Paparazzi/tree/modular) in the ```modular``` branch that separates separates components of our main loop.
-The modular branch can be installed installed with ```pip```:
+The modular branch can be installed with ```pip```:
 ```bash
 pip2 install git+https://github.com/HTDerekLiu/Paparazzi.git@modular
 ```
@@ -24,6 +24,11 @@ pip install PyOpenGL
 sudo apt-get install libglfw3
 sudo apt-get install libglfw3-dev
 pip install pyglfw
+```
+Alternatively it can be run in a docker by:
+```
+sh dockerbuild.sh
+sh dockerrun.sh
 ```
 
 Paparazzi uses pyeltopo, a tool necessary for mesh cleaning, please run and install it with the `build_pyeltopo.sh` script
