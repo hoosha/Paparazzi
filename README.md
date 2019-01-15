@@ -17,28 +17,20 @@ git submodule update --init --recursive
 #### Setup
 Paparazzi is tested on Ubuntu 16.04 machine on python 2.7. Dependencies include Eigen, BLAS, LAPACK, PyOpenGL, and PyGLFW. One option to install the dependencies is to run
 ```
-sudo apt-get install libeigen3-dev
-sudo apt-get install libblas-dev
-sudo apt-get install liblapack-dev
+conda install cmake
+conda install gcc
+conda install eigen3
+conda install -c conda-forge blas
+conda install glfw3
 pip install PyOpenGL
-sudo apt-get install libglfw3
-sudo apt-get install libglfw3-dev
 pip install pyglfw
+pip install pyeltopo
 ```
 Alternatively it can be run in a docker by:
 ```
 sh dockerbuild.sh
 sh dockerrun.sh
 ```
-
-Paparazzi uses pyeltopo, a tool necessary for mesh cleaning, please run and install it with the `build_pyeltopo.sh` script
-```bash
-bash build_pyeltopo.sh [-b] [-h] [-p pythonpath]
-```
-* `-h` to get a help message
-* `-b` to build but not install
-* `-p` to use the python found at `pythonpath`
-where `pythonpath` can be found by typing `which python` in the terminal.
 
 #### Bibtex
 ```
